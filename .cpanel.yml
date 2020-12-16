@@ -1,0 +1,9 @@
+---
+ 
+deployment:
+ 
+ tasks:
+ 
+ - export DEPLOYPATH=/home/codeadd1/public_html/egglog
+ 
+ - /usr/bin/rsync -Paz * $DEPLOYPATH --delete
